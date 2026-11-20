@@ -1,0 +1,53 @@
+{
+  "name": "qor-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ish stoli ustida yog'adigan interaktiv qor (shaffof, bosishlarni o'tkazuvchi overlay)",
+  "author": "Qor",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "icon": "node scripts/make-tray-icon.js && node scripts/make-icon.js",
+    "dist": "electron-packager . Qor --platform=win32 --arch=x64 --out=dist --overwrite --asar --icon=assets/icon.ico --ignore=\"^/dist\" --ignore=\"^/dist-installer\" --ignore=\"^/qor.log\"",
+    "setup": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "com.qor.desktop",
+    "productName": "Qor",
+    "directories": {
+      "output": "dist-installer"
+    },
+    "files": [
+      "src/**/*",
+      "scripts/desktop-layer.ps1",
+      "assets/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Qor",
+      "artifactName": "Qor-Setup-${version}.exe",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false
+    }
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.4.4",
+    "electron": "^45.4.1",
+    "electron-builder": "^26.0.12"
+  }
+}

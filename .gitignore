@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-installer/
+*.log
+.freebuff/
+.DS_Store

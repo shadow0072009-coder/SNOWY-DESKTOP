@@ -6,6 +6,18 @@ Windows uchun Electron ilova: shaffof qor qatlami ish stolining eng orqa foniga 
 
 ---
 
+## 📸 Skrinshotlar
+
+**Qor ish stolining o'zida — ikonkalar va oynalar orqasida yog'adi, ustiga chizmaydi va bosishlarni to'smaydi:**
+
+![Qor ish stolida](docs/screenshots/desktop-snow.webp)
+
+**Tray menyusi — zichlik, shamol, aurora, qatlam rejimi va hotkey'lar:**
+
+<img src="docs/screenshots/tray-menu.webp" alt="Tray menyusi" width="380">
+
+---
+
 ## Xususiyatlar
 
 - **Ish stoli qatlami** — qor oynalar *orqasida* turadi (Snowhush uslubi: `WorkerW`/`Progman`ga `SetParent`). Tray'dan `Overlay` rejimiga ham o'tish mumkin.

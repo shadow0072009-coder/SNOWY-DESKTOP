@@ -6,6 +6,23 @@ Windows uchun Electron ilova: shaffof qor qatlami ish stolining eng orqa foniga 
 
 ---
 
+## 🚀 Yuklab olish
+
+| Platforma | Fayl | Havola |
+| --- | --- | --- |
+| **Windows 10/11** | `Qor-Setup-1.0.0.exe` (115 MB) | [Yuklab olish](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases/download/v1.0.0/Qor-Setup-1.0.0.exe) |
+| **Android 7.0+** | `Qor-1.0.0.apk` (29 KB) | [Yuklab olish](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases/download/v1.0.0/Qor-1.0.0.apk) |
+
+Barcha relizlar: [Releases](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases).
+
+### Yangiliklar (v1.0.0)
+
+- **Android versiyasi** — qor endi telefonda ham: jonli fon rasmi (live wallpaper) sifatida ikonkalar orqasida yog'adi.
+- README'ga haqiqiy ilova skrinshotlari qo'shildi (ish stoli qatlami va tray menyusi).
+- Windows installer va Android APK bitta relizda.
+
+---
+
 ## 📸 Skrinshotlar
 
 **Qor ish stolining o'zida — ikonkalar va oynalar orqasida yog'adi, ustiga chizmaydi va bosishlarni to'smaydi:**
@@ -30,7 +47,7 @@ Windows uchun Electron ilova: shaffof qor qatlami ish stolining eng orqa foniga 
 
 ## O'rnatish (foydalanuvchi uchun)
 
-1. `Qor-Setup-*.exe` faylini yuklab oling.
+1. [`Qor-Setup-1.0.0.exe`](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases/download/v1.0.0/Qor-Setup-1.0.0.exe) faylini yuklab oling.
 2. Ikki marta bosing — bir bosishda o'rnatiladi (admin paroli kerak emas).
 3. Ish stolida **Qor** yorlig'i paydo bo'ladi. Qor darhol ko'rinadi, ilova tray'da turadi.
 
@@ -67,7 +84,13 @@ npm run dist    # dist/Qor-win32-x64/  (portativ papka + ZIP)
 - Ilovada sozlamalar: zichlik, shamol, qor to'planishi, aurora, "Bo'ron chaqirish". Bo'sh joyga ikki marta tegish ham bo'ron chaqiradi.
 - Android 7.0+ (API 24).
 
-O'rnatish: `dist-android/Qor-1.0.0.apk` faylini telefonga ko'chirib o'rnating, so'ng ilovani ochib **Ish stoliga o'rnatish** tugmasini bosing (fon rasmi tanlash oynasi ochiladi).
+O'rnatish:
+
+1. [`Qor-1.0.0.apk`](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases/download/v1.0.0/Qor-1.0.0.apk) faylini telefonga yuklab oling.
+2. Faylni ochib o'rnating ("Noma'lum manbalardan o'rnatish"ga ruxsat berish kerak bo'lishi mumkin).
+3. Ilovani ochib **Ish stoliga o'rnatish** tugmasini bosing — fon rasmi tanlash oynasi ochiladi.
+
+APK debug kalit bilan imzolangan, shuning uchun Play Protect "noma'lum ilova" deb ogohlantirishi mumkin: *Baribir o'rnatish*.
 
 Yig'ish (Gradle kerak emas — SDK build-tools yetarli):
 

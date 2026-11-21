@@ -4,3 +4,10 @@ dist-installer/
 *.log
 .freebuff/
 .DS_Store
+
+# Android
+.android-sdk/
+android/build/
+android/.tools/
+android/debug.keystore
+*.idsig

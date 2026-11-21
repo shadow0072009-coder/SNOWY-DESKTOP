@@ -58,6 +58,25 @@ npm run setup   # dist-installer/Qor-Setup-<versiya>.exe  (NSIS installer)
 npm run dist    # dist/Qor-win32-x64/  (portativ papka + ZIP)
 ```
 
+## 📱 Android (live wallpaper)
+
+`android/` papkasida Windows versiyaning Android porti: qor **jonli fon rasmi** (live wallpaper) sifatida ishlaydi — ikonkalar, papka va vidjetlar orqasida yog'adi, tegishlarni to'smaydi.
+
+- Qor dvigateli `src/renderer/snow.js` dan Java'ga port qilingan: parchalalar, shamol, uyum, aurora, bo'ron — bir xil formulalar va bir xil ko'rinish.
+- `WallpaperService` + 30 fps render oqimi, bitta canvas, tayyor spritelar — batareyani tejaydi.
+- Ilovada sozlamalar: zichlik, shamol, qor to'planishi, aurora, "Bo'ron chaqirish". Bo'sh joyga ikki marta tegish ham bo'ron chaqiradi.
+- Android 7.0+ (API 24).
+
+O'rnatish: `dist-android/Qor-1.0.0.apk` faylini telefonga ko'chirib o'rnating, so'ng ilovani ochib **Ish stoliga o'rnatish** tugmasini bosing (fon rasmi tanlash oynasi ochiladi).
+
+Yig'ish (Gradle kerak emas — SDK build-tools yetarli):
+
+```bash
+bash android/build.sh   # dist-android/Qor-<versiya>.apk
+```
+
+Skript `ANDROID_SDK` muhit o'zgaruvchisini yoki loyihadagi `.android-sdk/` papkasini ishlatadi (`build-tools` 35.0.0, `platforms;android-34`).
+
 ## Tuzilishi
 
 ```
@@ -72,6 +91,15 @@ scripts/
   make-icon.js         # .ico generator
   make-tray-icon.js    # tray PNG generator
 assets/                # icon.ico, tray.png
+android/
+  AndroidManifest.xml  # activity + live wallpaper service
+  build.sh             # aapt2 + javac + d8 + zipalign + apksigner (Gradlesiz)
+  java/com/qor/android/
+    SnowEngine.java           # qor dvigateli (snow.js porti)
+    SnowWallpaperService.java # jonli fon rasmi + render oqimi
+    MainActivity.java         # sozlamalar oynasi
+    Settings.java             # SharedPreferences
+  res/                 # wallpaper meta, ikonka, matnlar, tema
 ```
 
 ## Texnik eslatmalar

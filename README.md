@@ -11,7 +11,7 @@ Windows uchun Electron ilova: shaffof qor qatlami ish stolining eng orqa foniga 
 | Platforma | Fayl | Havola |
 | --- | --- | --- |
 | **Windows 10/11** | `Qor-Setup-1.0.0.exe` (115 MB) | [Yuklab olish](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases/download/v1.0.0/Qor-Setup-1.0.0.exe) |
-| **Android 7.0+** | `Qor-1.0.0.apk` (29 KB) | [Yuklab olish](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases/download/v1.0.0/Qor-1.0.0.apk) |
+| **Android 7.0+** (beta) | `Qor-1.0.0.apk` (29 KB) | [Yuklab olish](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases/download/v1.0.0/Qor-1.0.0.apk) |
 
 Barcha relizlar: [Releases](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/releases).
 
@@ -76,6 +76,8 @@ npm run dist    # dist/Qor-win32-x64/  (portativ papka + ZIP)
 ```
 
 ## 📱 Android (live wallpaper)
+
+> ⚠️ **Beta:** Android versiyasi hali beta jarayonida. Ba'zi qurilmalarda xatolik yoki bug'lar uchraydi (render to'xtab qolishi, bo'ron/tegishga kech javob, batareya sarfi, turli ekran o'lchamlarida noto'g'ri masshtab). Muammoga duch kelsangiz — [Issue](https://github.com/shadow0072009-coder/SNOWY-DESKTOP/issues) ochib, qurilma modeli va Android versiyasini yozing.
 
 `android/` papkasida Windows versiyaning Android porti: qor **jonli fon rasmi** (live wallpaper) sifatida ishlaydi — ikonkalar, papka va vidjetlar orqasida yog'adi, tegishlarni to'smaydi.
 
